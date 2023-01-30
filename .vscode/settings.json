@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "fcntl.h": "c",
-        "system_error": "c",
-        "fcntl2.h": "c"
-    }
-}
