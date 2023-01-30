@@ -1,0 +1,3 @@
+hello
+hello
+这是用于copyfile的测试文件
