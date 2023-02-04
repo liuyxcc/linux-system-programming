@@ -8,14 +8,25 @@
 #include <unistd.h>
 
 int main() {
+    // 利用open打开文件
     int fd = open("a.txt", O_RDONLY);
-    printf("File description: %d\n", fd);
 
     if (fd == -1) {
         perror("a.txt");
+        return -1;
     }
 
     close(fd);
+
+    // 利用open创建文件
+    int fd2 = open("create.txt", O_RDWR | O_CREAT, 0777);
+
+    if (fd2 == -1) {
+        perror("create.txt");
+        return -1;
+    }
+
+    close(fd2);
 
     return 0;
 }
